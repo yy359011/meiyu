@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", "Playfair Display", "Georgia", "SimSun", "STSong", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-crimson-50: #fef2f2;
+  --color-crimson-100: #fee2e2;
+  --color-crimson-200: #fecaca;
+  --color-crimson-500: #b11e22;
+  --color-crimson-600: #99161a;
+  --color-crimson-700: #7f1216;
+  --color-crimson-800: #6b1114;
+  --color-crimson-900: #4c0d10;
+  
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-300: #fcd34d;
+  --color-gold-500: #d97706;
+  --color-gold-600: #b45309;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fdfaf5] text-stone-800 antialiased selection:bg-crimson-100 selection:text-crimson-900;
+  }
+}
+
+/* Custom styles for matching the design */
+.crimson-gradient {
+  background: linear-gradient(135deg, #b11e22 0%, #801014 100%);
+}
+
+.china-outline-box {
+  position: relative;
+  border: 1px solid rgba(177, 30, 34, 0.25);
+  box-shadow: 0 4px 20px -2px rgba(177, 30, 34, 0.03);
+}
+
+.china-outline-box::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid rgba(177, 30, 34, 0.05);
+  pointer-events: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfaf5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4d7c0;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b11e22;
+}
