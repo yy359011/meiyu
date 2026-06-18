@@ -1,0 +1,6 @@
+{
+  "name": "职业教育美育教育资源及管理平台",
+  "description": "职业教育美育教育资源及管理平台 —— 提供丰富的深层艺术美育课程、美学讲座、特色展览与精彩活动。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
